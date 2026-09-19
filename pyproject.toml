@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "core"
+version = "0.1.0"
+description = "Document API"
+authors = ["pmutua <pmutua@live.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.97.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+sqlalchemy = "^2.0.16"
+python-dotenv = "^1.0.0"
+validators = "^0.20.0"
+pyjwt = "^2.7.0"
+passlib = "^1.7.4"
+pydantic = {extras = ["email"], version = "^1.10.9"}
+bcrypt = "^4.0.1"
+alembic = "^1.11.1"
+mangum = "^0.17.0"
+python-magic = "^0.4.27"
+boto3 = "^1.26.162"
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core", "libmagic"]
+build-backend = "poetry.core.masonry.api"
